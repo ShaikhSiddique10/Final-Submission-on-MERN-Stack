@@ -1,0 +1,82 @@
+/* General container styles */
+.container {
+  background-color: #f8f9fa; /* Light background */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Adjust to ensure the content is pushed below the navbar */
+}
+
+/* Heading style */
+h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-top: 0;  /* Remove extra margin, since the container already has top spacing */
+  text-align: center;
+}
+
+/* Button styles */
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Label styles */
+.form-label {
+  font-weight: 600;
+  letter-spacing: 0.5px; /* Slight letter spacing for clarity */
+}
+
+/* Additional padding between the form inputs */
+input, textarea {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+/* Ensure a clean input area */
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* For button */
+button {
+  padding: 12px;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #218838;
+}
+
+/* For small screens, add extra padding and font size adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+}

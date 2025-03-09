@@ -1,0 +1,78 @@
+/* Ensure the html and body elements take the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Bidder Dashboard Styles */
+.bidder-dashboard {
+    width: 100vw; /* Full viewport width */
+    height: calc(100vh - 70px); /* Full height minus navbar height */
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the content to the top */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Center the title at the top of the screen */
+.bidder-dashboard h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Full width container for auction list */
+.auction-list {
+    flex-grow: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.auction-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.auction-list th, .auction-list td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+}
+
+.auction-list th {
+    background-color: #007bff;
+    color: white;
+}
+
+.bid-btn {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bid-btn:hover {
+    background-color: #218838;
+}
+
+/* Ensure proper responsiveness */
+@media (max-width: 768px) {
+    .bidder-dashboard h2 {
+        font-size: 2rem;
+    }
+    .auction-list {
+        padding: 15px;
+    }
+}

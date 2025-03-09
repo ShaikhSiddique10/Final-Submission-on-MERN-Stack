@@ -1,0 +1,194 @@
+/* Ensure html and body are full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Full height container with a background image */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('C:\Users\Shaikh Umar\Desktop\Internship Sidd\frontend\public\images\photo-1516321497487-e288fb19713f.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+/* Welcome box with a polished look */
+.welcome-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent white background */
+  padding: 40px 30px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+  animation: slideUp 1.5s ease-out;
+}
+
+.welcome-box:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Welcome heading with stylish brand name */
+.welcome-container h1 {
+  font-size: 3rem;
+  color: #4CAF50; /* Green color for heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  animation: fadeInText 2s ease-in-out;
+}
+
+.welcome-container .brand-name {
+  font-weight: bold;
+  color: #FF5733; /* Bright accent color for brand name */
+}
+
+/* Style for the description */
+.welcome-description {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  color: #333;
+  font-weight: 300;
+  animation: fadeInText 3s ease-in-out;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* The button style */
+.welcome-button {
+  padding: 16px 32px;
+  font-size: 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.welcome-button:active {
+  transform: scale(0.95); /* Button presses down on click */
+}
+
+/* Hover effect on the button */
+.welcome-button:hover {
+  animation: pulseButton 1s infinite; /* Pulse animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive design: Make the layout better on mobile */
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 20px;
+  }
+
+  .welcome-box {
+    width: 90%;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .welcome-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-description {
+    font-size: 1.2rem;
+  }
+
+  .welcome-button {
+    font-size: 1.3rem;
+    padding: 14px 28px;
+  }
+}
+
+/* On even smaller screens (phones) */
+@media (max-width: 480px) {
+  .welcome-container {
+    padding: 15px;
+  }
+
+  .welcome-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .welcome-container h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-description {
+    font-size: 1rem;
+  }
+
+  .welcome-button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+  }
+}

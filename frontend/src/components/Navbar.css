@@ -1,0 +1,164 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #343a40 !important;
+  padding: 15px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #f8f9fa !important;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #495057;
+  border-radius: 5px;
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+  background-color: rgba(0, 123, 255, 0.1); /* Active state highlight */
+  border-radius: 5px;
+}
+
+/* Navbar on Scroll */
+.navbar.scrolled {
+  background-color: #212529 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.navbar-nav .nav-item .btn-link {
+  color: #fff !important;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .btn-link:hover {
+  background-color: #495057;
+  color: #fff !important;
+  transform: scale(1.1); /* Slight scale effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Button */
+.dashboard-btn {
+  color: #28a745;
+  font-weight: 600;
+  position: relative;
+}
+
+.dashboard-btn:hover {
+  background-color: #28a745;
+  color: #fff !important;
+}
+
+.dashboard-btn::before {
+  content: "\f0e4";  /* FontAwesome icon for dashboard */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.dashboard-btn:hover::before {
+  color: #fff;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: 2px solid #dc3545; /* Box-style border */
+  border-radius: 30px;
+  background-color: transparent;
+  text-transform: none;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #dc3545;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:focus {
+  outline: none;
+}
+
+.logout-btn::before {
+  content: "\f2f5"; /* FontAwesome logout icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 10px;
+  color: #dc3545;
+  transition: color 0.3s ease;
+}
+
+.logout-btn:hover::before {
+  color: #fff; /* Icon color changes to white on hover */
+}
+
+/* Subtle glowing effect on hover */
+.logout-btn:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Animation on active state for logout button */
+@keyframes logout-focus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Navbar collapse on mobile */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Navbar when collapsed on mobile */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+}

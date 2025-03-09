@@ -1,0 +1,117 @@
+/* Full-page background with Image */
+body { 
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Container Box for Form */
+.signup-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for effect */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Heading Style */
+.card-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f50057;
+  margin-bottom: 30px;
+}
+
+/* Form Control Styling */
+.form-label {
+  font-size: 16px;
+  text-align: left;
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #f50057;
+  box-shadow: 0 0 5px rgba(245, 0, 87, 0.5);
+}
+
+/* Button Styling */
+.btn-success {
+  background-color: #f50057;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+  background-color: #c51162;
+  transform: translateY(-3px);
+}
+
+/* Links Styling */
+.text-center {
+  margin-top: 20px;
+}
+
+.text-primary {
+  color: #00796b;
+}
+
+.text-primary:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 25px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .btn-success {
+    padding: 14px;
+    font-size: 15px;
+  }
+}

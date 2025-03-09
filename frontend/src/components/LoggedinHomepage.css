@@ -1,0 +1,59 @@
+/* General styles for homepage */
+.loggedin-homepage {
+  background-color: #f0f2f5; /* Light background */
+  padding: 40px 20px; /* Padding around content */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Title styling */
+.homepage-title {
+  font-size: 3rem;
+  color: #212529;
+  font-weight: bold;
+  margin-top: 80px; /* Ensures space below the navbar */
+  text-align: center;
+}
+
+/* Intro paragraph styling */
+.homepage-intro {
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin-top: 20px; /* Ensure space from title */
+  text-align: center;
+}
+
+/* Features section styling */
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.feature {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.feature-text {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  font-size: 0.875rem;
+}
